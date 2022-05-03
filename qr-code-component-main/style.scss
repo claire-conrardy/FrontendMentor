@@ -14,7 +14,14 @@ body {
     height: 288px;
 
     .qr-background {
+      position: absolute;
       margin: 16px 16px 344px 16px;
+    }
+
+    .qr {
+      position: absolute;
+      z-index: 1;
+      margin: 80px;
     }
   }
 

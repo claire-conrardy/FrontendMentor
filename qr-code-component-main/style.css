@@ -16,7 +16,14 @@ body {
 }
 
 .card .qr-code .qr-background {
+  position: absolute;
   margin: 16px 16px 344px 16px;
+}
+
+.card .qr-code .qr {
+  position: absolute;
+  z-index: 1;
+  margin: 80px;
 }
 
 .card .presentation-text {

@@ -7,7 +7,7 @@ body {
   width: 320px;
   height: 497px;
   border-radius: 20px;
-  margin: 152px auto;
+  margin: 192px auto;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px;
 }
@@ -47,6 +47,12 @@ body {
   width: 256px;
   height: 57px;
   margin: 20px 16px 0 16px;
+}
+
+@media only screen and (max-width: 1440px), (max-height: 800px) {
+  .card {
+    margin: 152px auto;
+  }
 }
 
 @media only screen and (min-width: 375px) and (max-height: 667px) {

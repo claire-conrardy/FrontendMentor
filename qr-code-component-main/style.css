@@ -8,6 +8,8 @@ body {
   height: 497px;
   border-radius: 20px;
   margin: 152px auto;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
 .card .qr-code {

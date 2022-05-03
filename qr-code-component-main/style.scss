@@ -1,0 +1,50 @@
+body {
+  background-color: #D5E1EF;
+}
+
+.card {
+  background-color: #FFFFFF;
+  width: 320px;
+  height: 497px;
+  border-radius: 20px;
+  margin: 152px auto;
+
+  .qr-code {
+    width: 288px;
+    height: 288px;
+
+    .qr-background {
+      margin: 16px 16px 344px 16px;
+    }
+  }
+
+  .presentation-text {
+    font-family: 'Outfit', sans-serif;
+    width: 288px;
+    height: 129px;
+    margin: 40px auto;
+    text-align: center;
+
+    h1 {
+      font-size: 22px;
+      color: #1F314F;
+    }
+
+    p {
+      font-size: 15px;
+      color: #7D889E;
+      width: 256px;
+      height: 57px;
+      margin: 20px 16px 0 16px;
+    }
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-height: 667px) {
+  .card {
+    margin: 85px auto;
+    .qr-background {
+      border-radius: 10px;
+    }
+  }
+}

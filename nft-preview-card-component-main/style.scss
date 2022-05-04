@@ -1,0 +1,118 @@
+$soft-blue: hsl(215, 51%, 70%);
+$white: hsl(0, 0%, 100%);
+$cyan: hsl(178, 100%, 50%);
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 350px;
+  height: 596px;
+  background-color: #15263F;
+  border-radius: 15px;
+  padding: 24px 24px 0 24px;
+  box-sizing: border-box;
+
+  .image {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .image .card-img {
+    width: 100%;
+    display: block;
+  }
+
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: hsla(178, 100%, 50%, 0.60);
+    display: none;
+  }
+
+  .overlay .card-img {
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+
+  .image:hover .overlay {
+    display: block;
+    cursor: pointer;
+  }
+
+  .card-description {
+    border-bottom: 1px solid #2E405B;
+    .title {
+      color: $white;
+      text-decoration: none;
+    }
+
+    .title:hover {
+      color: $cyan;
+    }
+
+    .description-text {
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    .price, .time-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .price {
+      color: $cyan;
+    }
+
+    p, .time-left {
+      color: $soft-blue;
+    }
+
+    .icon {
+      padding-right: 10px;
+    }
+
+    .additional-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    color: $soft-blue;
+
+    .avatar{
+      height: 33px;
+      margin-right: 10px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+    }
+
+    .designer-name {
+      color: $white;
+      text-decoration: none;
+    }
+
+    .designer-name:hover {
+      color: $cyan;
+    }
+  }
+}

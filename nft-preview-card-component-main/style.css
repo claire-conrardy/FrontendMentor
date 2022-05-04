@@ -1,0 +1,137 @@
+body {
+  background-color: #0d192b;
+  font-family: 'Outfit', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  width: 350px;
+  height: 596px;
+  background-color: #15263F;
+  border-radius: 15px;
+  padding: 24px 24px 0 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card .image {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card .image .card-img {
+  width: 100%;
+  display: block;
+}
+
+.card .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 255, 247, 0.6);
+  display: none;
+}
+
+.card .overlay .card-img {
+  position: absolute;
+  width: 50px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.card .image:hover .overlay {
+  display: block;
+  cursor: pointer;
+}
+
+.card .card-description {
+  border-bottom: 1px solid #2E405B;
+}
+
+.card .card-description .title {
+  color: white;
+  text-decoration: none;
+}
+
+.card .card-description .title:hover {
+  color: #00fff7;
+}
+
+.card .card-description .description-text {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.card .card-description .price, .card .card-description .time-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .card-description .price {
+  color: #00fff7;
+}
+
+.card .card-description p, .card .card-description .time-left {
+  color: #8bacda;
+}
+
+.card .card-description .icon {
+  padding-right: 10px;
+}
+
+.card .card-description .additional-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8bacda;
+}
+
+.card .card-footer .avatar {
+  height: 33px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.card .card-footer .designer-name {
+  color: white;
+  text-decoration: none;
+}
+
+.card .card-footer .designer-name:hover {
+  color: #00fff7;
+}
+/*# sourceMappingURL=style.css.map */

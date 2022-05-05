@@ -55,6 +55,7 @@ body {
 .card .card-description .title {
   color: white;
   text-decoration: none;
+  font-size: 11px;
 }
 
 .card .card-description .title:hover {

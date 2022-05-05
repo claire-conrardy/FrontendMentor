@@ -23,38 +23,61 @@ body {
     border-radius: 8px;
     overflow: hidden;
     position: relative;
-  }
-
-  .image .card-img {
     width: 100%;
-    display: block;
+    height: 302px;
+    .card-img{
+      object-fit: contain;
+      width: 100%;
+    }
   }
 
-  .overlay {
+  .image:hover::after{
+    background: hsla(178, 100%, 50%, 0.60) no-repeat center url("images/icon-view.svg");
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    background-color: hsla(178, 100%, 50%, 0.60);
-    display: none;
-  }
-
-  .overlay .card-img {
-    position: absolute;
-    width: 50px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-  }
-
-
-  .image:hover .overlay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    content: "";
     cursor: pointer;
   }
+
+  // .image {
+  //   border-radius: 8px;
+  //   overflow: hidden;
+  //   position: relative;
+  // }
+
+  // .image .card-img {
+  //   width: 100%;
+  //   display: block;
+  // }
+
+  // .overlay {
+  //   position: absolute;
+  //   height: 100%;
+  //   width: 100%;
+  //   top: 0;
+  //   left: 0;
+  //   background-color: hsla(178, 100%, 50%, 0.60);
+  //   display: none;
+  // }
+
+  // .overlay .card-img {
+  //   position: absolute;
+  //   width: 50px;
+  //   left: 50%;
+  //   top: 50%;
+  //   transform: translate(-50%,-50%);
+  // }
+
+
+  // .image:hover .overlay {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   cursor: pointer;
+  // }
 
   .card-description {
     border-bottom: 1px solid #2E405B;

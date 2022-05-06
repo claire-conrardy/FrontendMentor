@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  background: #e0e8ff no-repeat url("images/pattern-background-desktop.svg");
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  width: 450px;
+  border-radius: 20px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+          box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+}
+
+.card .top-image {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  overflow: hidden;
+}
+
+.card .top-image img {
+  width: 100%;
+}
+
+.card .card-content {
+  padding: 0 48px 48px;
+}
+
+.card .card-content .description {
+  text-align: center;
+}
+
+.card .card-content .description h1 {
+  color: #1F2E55;
+  margin: 45px 0 17px 0;
+}
+
+.card .card-content .description p {
+  color: #717FA6;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.card .card-content .price-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #F7F9FF;
+  border-radius: 11px;
+  margin: 20px 0 32px 0;
+  width: 100%;
+  padding: 25px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card .card-content .price-description .plan-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .card-content .price-description .plan-price img {
+  margin-right: 15px;
+}
+
+.card .card-content .price-description .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card .card-content .price-description a {
+  color: #382AE1;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.card .card-content .price-description a:hover {
+  color: #766CF1;
+  text-decoration: none;
+}
+
+.card .card-content .payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .card-content .payment .payment-btn {
+  background-color: #382AE1;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 11px;
+  color: #fff;
+  font-weight: 600;
+  -webkit-box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+          box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  margin-bottom: 32px;
+}
+
+.card .card-content .payment .payment-btn:hover {
+  background: #766CF1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card .card-content .payment .order {
+  color: #717FA6;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.card .card-content .payment .order:hover {
+  color: #1F2E55;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 375px) {
+  .body {
+    background: #e0e8ff no-repeat url("images/pattern-background-mobile");
+  }
+  .card {
+    width: 327px;
+  }
+  .card .card-content {
+    padding: 0 24px 24px;
+  }
+  .card .card-content .description p {
+    font-size: 16px;
+  }
+  .card .top-image {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+/*# sourceMappingURL=style.css.map */

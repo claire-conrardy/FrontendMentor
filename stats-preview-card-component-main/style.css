@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #090b1a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+body .card {
+  background-color: #1b1938;
+  width: 562px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 71px 85px 59px 72px;
+  height: 446px;
+  border-radius: 8px 0 0 8px;
+}
+
+body .card .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Inter', sans-serif;
+}
+
+body .card .description h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+body .card .description .description-text {
+  color: rgba(255, 255, 255, 0.75);
+  margin: 25px 0 72px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  width: 375px;
+}
+
+body .card .description .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .card .description .stats .stats-group {
+  padding-right: 60px;
+}
+
+body .card .description .stats .numbers {
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  font-family: 'Inter', sans-serif;
+}
+
+body .card .description .stats .details {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body .image {
+  background-color: #aa5cdb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0 8px 8px 0;
+}
+
+body .image img {
+  opacity: 0.75;
+  mix-blend-mode: multiply;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 1000px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+  body .card {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 327px;
+    padding: 40px 31px 32px;
+    border-radius: 0 0 8px 8px;
+  }
+  body .card .description h1 {
+    font-size: 28px;
+    line-height: 32px;
+    width: 264px;
+  }
+  body .card .description .description-text {
+    width: 264px;
+    margin-bottom: 40px;
+  }
+  body .card .description .stats {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .card .description .stats .stats-group {
+    padding-right: 0;
+    padding-bottom: 24px;
+  }
+  body .image {
+    border-radius: 8px 8px 0 0;
+  }
+  body .image img {
+    width: 327px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

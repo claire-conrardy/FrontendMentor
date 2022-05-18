@@ -1,0 +1,191 @@
+$black: #191826;
+$dark-orange: #FA7453;
+$white: #FCFAF9;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('assets/bg-main-desktop.png');
+  font-family: 'IBM Plex Sans', sans-serif;
+  padding: 0 165px;
+  header {
+    nav {
+      padding: 62px 0 127px;
+    }
+    .nav-geometrics {
+      position: absolute;
+      left: 1128px;
+      top: -40px;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 88px;
+      line-height: 88px;
+      letter-spacing: -1px;
+      width: 1015px;
+      margin-bottom: 40px;
+    }
+    .presentation-text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 34px;
+    }
+  }
+  main {
+    .black-card{
+      background-color: $black;
+      border-radius: 12px;
+      margin-top: 321px;
+      width: 1110px;
+      height: 600px;
+      margin-bottom: 280px;
+    }
+    .phone-img{
+      width: 312px;
+      height: 642px;
+      left: 267px;
+      top: 647px;
+      position: absolute;
+      z-index: 1;
+    }
+    .geometrics-card {
+      left: 501px;
+      top: 820px;
+      position: absolute;
+    }
+    .orange-card {
+      background-color: $dark-orange;
+      border-radius: 12px;
+      padding: 58px 59px 48px 54px;
+      color: $white;
+      left: 734px;
+      top: 950px;
+      position: absolute;
+      width: 446px;
+      h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 52px;
+      }
+      p {
+        margin: 22px 0 39px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 34px;
+      }
+      .price {
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 52px;
+      }
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 46px;
+        .btn {
+          padding: 20px 30px;
+          text-decoration: none;
+          border-radius: 12px;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 32px;
+          text-align: center;
+        }
+        .ios {
+          background-color: $black;
+          color: $white;
+          margin-bottom: 16px;
+        }
+        .ios:hover {
+          background-color: #66E2DC;
+        }
+        .android {
+          background-color: $white;
+          color: $black;
+        }
+        .android:hover {
+          background-color: #FFB964;
+        }
+      }
+
+    }
+  }
+  footer {
+    margin-bottom: 91px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footer-text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      width: 366px;
+    }
+    .social {
+      padding-left: 20px;
+    }
+    img:hover {
+      color: $dark-orange;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 39px;
+    header {
+      .nav-geometrics {
+        width: 266.67px;
+        height: 400px;
+        left: 537px;
+        top: -32px;
+      }
+      h1, .presentation-text {
+        width: 520px
+      }
+      h1 {
+        font-size: 64px;
+        line-height: 64px;
+      }
+      .presentation-text {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+    main {
+      .black-card {
+        width: 696px;
+      }
+      .phone-img {
+        left: 97px;
+        top: 632px;
+        width: 270.21px;
+        height: 556px;
+      }
+      .geometrics-card {
+        width: 280px;
+        height: 420px;
+        left: 262px;
+        top: 860px;
+      }
+      .orange-card {
+        left: 262px;
+        top: 980px;
+        width: 399px;
+        z-index: 2;
+        h2 {
+          font-size: 32px;
+          line-height: 40px;
+        }
+        p {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}

@@ -17,6 +17,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  padding: 0 260px;
 }
 
 .card {
@@ -27,7 +28,9 @@ body {
 
 .card .orange-column, .card .cyan-column, .card .dark-cyan-column {
   padding: 48px;
-  width: 307px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
 }
 
 .card .orange-column {
@@ -107,9 +110,6 @@ body {
   }
   .card .dark-cyan-column {
     border-radius: 0 0 8px 8px;
-  }
-  .card .orange-column, .card .cyan-column, .card .dark-cyan-column {
-    width: 327px;
   }
   .card p {
     margin-bottom: 36px;

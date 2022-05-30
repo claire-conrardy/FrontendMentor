@@ -9,14 +9,14 @@ $white: #FCFAF9;
 }
 
 body {
-  background-image: url('assets/bg-main-desktop.png');
+  background: url('assets/bg-main-desktop.png'), right top no-repeat url('assets/Group\ Copy.svg');;
   font-family: 'IBM Plex Sans', sans-serif;
   padding: 0 165px;
   .container {
-    background: 189% -24% no-repeat url('assets/Group\ 8.svg');
+    // background:
     header {
       nav {
-        padding-top: 62px;
+        padding-top: 61.99px;
       }
       h1 {
         font-weight: 700;
@@ -24,7 +24,7 @@ body {
         line-height: 88px;
         letter-spacing: -1px;
         width: 1015px;
-        margin: 127px 0 40px;
+        margin: 127.01px 0 40px;
       }
       .presentation-text {
         font-weight: 400;

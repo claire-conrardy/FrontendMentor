@@ -6,17 +6,13 @@
 }
 
 body {
-  background-image: url("assets/bg-main-desktop.png");
+  background: url("assets/bg-main-desktop.png"), right top no-repeat url("assets/Group Copy.svg");
   font-family: 'IBM Plex Sans', sans-serif;
   padding: 0 165px;
 }
 
-body .container {
-  background: 189% -24% no-repeat url("assets/Group 8.svg");
-}
-
 body .container header nav {
-  padding-top: 62px;
+  padding-top: 61.99px;
 }
 
 body .container header h1 {
@@ -25,7 +21,7 @@ body .container header h1 {
   line-height: 88px;
   letter-spacing: -1px;
   width: 1015px;
-  margin: 127px 0 40px;
+  margin: 127.01px 0 40px;
 }
 
 body .container header .presentation-text {

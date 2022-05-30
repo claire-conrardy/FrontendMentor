@@ -32,6 +32,7 @@ body .container header .presentation-text {
   font-weight: 400;
   font-size: 20px;
   line-height: 34px;
+  width: 825px;
 }
 
 body .container main .black-card {

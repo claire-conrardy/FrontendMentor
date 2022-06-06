@@ -114,12 +114,10 @@ body {
   }
   .share-icon-mobile {
     display: none;
-    background-color: #48556A;
-
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1440px) {
   body {
     .card {
       flex-direction: column;
@@ -136,7 +134,30 @@ body {
           margin: 12px 0 32px;
         }
       }
+      // .share-icon {
+      //   display: none;
+      // }
+      // .sharing-btns {
+      //   display: none;
+      // }
+      // .share-icon-mobile {
+      //   background-color: #48556A;
+      //   padding: 22px 32px;
+      //   display: flex;
+      //   .share-btn {
+      //     background-color: #ECF2F8;
+      //     padding: 10px;
+      //     border-radius: 50%;
+      //   }
+      // }
+      // .sharing-btns-mobile {
+      //   background-color: #48556A;
+      //   padding: 18px 36px;
+      //   color: white;
+      //   display: flex;
+      //   position: absolute;
+      //   align-items: center;
+      // }
     }
-
   }
 }

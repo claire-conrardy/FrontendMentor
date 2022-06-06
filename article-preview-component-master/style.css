@@ -166,10 +166,9 @@ body .sharing-btns .icon {
 
 body .share-icon-mobile {
   display: none;
-  background-color: #48556A;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1440px) {
   body .card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

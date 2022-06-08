@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 165px;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 24px;
+    .card {
+      border-radius: 8px;
+      box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+      padding: 26px 32px;
+      .card__header {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        .card__avatar {
+          width: 28px;
+          border-radius: 50%;
+        }
+        .card__avatar--border {
+          border: 2px solid #A775F1;
+        }
+        .card__student-name {
+          font-size: 13px;
+        }
+        .card__student-status {
+          font-size: 11px;
+          line-height: 11px;
+        }
+      }
+      h1 {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 18px 0 16px;
+      }
+      p {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 18px;
+      }
+    }
+    .card--card-one {
+      background-color: #733FC8;
+      grid-column: 1 / span 2;
+    }
+    .card--card-two {
+      background-color: #48556A;
+    }
+    .card--white-card {
+      background-color: #FFFFFF;
+      h1 {
+        margin: 18px 0 24px;
+      }
+      .card__student-name, h1 {
+        color: #48556A;
+      }
+      .card__student-status, .card__testimonial-text {
+        color: #48556A;
+        opacity: 0.7;
+      }
+    }
+    .card--card-three {
+      grid-column: 4 / 5;
+      grid-row: 1 / span 2;
+    }
+    .card--card-five {
+      background-color: #19202D;
+      grid-column: 2 / span 2;
+      h1 {
+        margin: 18px 0 24px;
+      }
+
+    }
+    .card--card-one, .card--card-two, .card--card-five {
+       .card__student-name, h1 {
+        color: #FFFFFF;
+      }
+      .card__student-status, .card__testimonial-text {
+        color: #FFFFFF;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 972px) {
+  body {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
